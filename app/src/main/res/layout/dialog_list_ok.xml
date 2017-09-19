@@ -1,0 +1,37 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/space_22"
+    android:padding="@dimen/space_15">
+
+    <com.jinxin.jxtouchscreen.ui.widget.WrapListView
+        android:id="@+id/lv_radio_dialog_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/color_shape_normal"
+        android:layout_centerHorizontal="true"
+        android:dividerHeight="@dimen/space_1"
+        android:minHeight="@dimen/space_300"
+        android:minWidth="@dimen/space_300"
+        android:padding="@dimen/space_10"
+        android:scrollbars="none"
+        app:layout_marginTopPercent="10%"
+        app:layout_heightPercent="80%"
+        app:layout_widthPercent="70%"
+        >
+
+    </com.jinxin.jxtouchscreen.ui.widget.WrapListView>
+
+    <Button
+        android:id="@+id/btn_radio_dialog_ok"
+        android:layout_width="@dimen/space_160"
+        android:layout_height="@dimen/space_50"
+        android:layout_below="@id/lv_radio_dialog_list"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector_btn_normal"
+        android:text="@string/ok"
+        android:textColor="@color/radio_list_dialog_btn_text"
+        android:textSize="@dimen/text_16"/>
+
+</android.support.percent.PercentRelativeLayout>

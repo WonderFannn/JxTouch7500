@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/replace_framelayout_messege_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/iv_back"
+        android:contentDescription="@string/default_img_desc"
+        app:layout_aspectRatio="@fraction/same_ratio"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="8%" />
+
+    <android.support.percent.PercentRelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_device_inspection"
+        app:layout_heightPercent="80%"
+        app:layout_widthPercent="60%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/rl_message_list_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space_20"
+            android:paddingTop="@dimen/space_20"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/message_alert"
+                android:textColor="@color/color_ccc"
+                android:textSize="@dimen/text_20" />
+
+            <Button
+                android:id="@+id/btn_message_increase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_30"
+                android:background="@drawable/btn_message_list_increase"
+                app:layout_heightPercent="10%"
+                app:layout_widthPercent="20%"/>
+        </android.support.percent.PercentRelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_message_inpection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_message_list_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_10"
+            android:divider="@color/color_line"
+            android:dividerHeight="@dimen/space_1"
+            android:scrollbars="none"
+            app:layout_heightPercent="80%"
+            app:layout_widthPercent="90%">
+
+        </ListView>
+    </android.support.percent.PercentRelativeLayout>
+</android.support.percent.PercentRelativeLayout>

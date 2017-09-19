@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:background="@drawable/background1">
+
+    <ImageView
+        android:id="@id/back_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/iv_back"
+        android:contentDescription="@string/default_img_desc"
+        app:layout_aspectRatio="@fraction/same_ratio"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="8%"
+        />
+
+    <com.jinxin.jxtouchscreen.widget.PercentLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_heightPercent="6%"
+        app:layout_marginLeftPercent="20%"
+        app:layout_marginTopPercent="16%">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_state"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20"/>
+
+        <ToggleButton
+            android:id="@+id/tb_switch_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginStart="@dimen/space_10"
+            android:background="@drawable/aircondition_selector_toggle_switch"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            app:layout_aspectRatio="@fraction/tb_switch_1_ratio"
+            app:layout_heightPercent="100%"/>
+    </com.jinxin.jxtouchscreen.widget.PercentLinearLayout>
+
+    <com.jinxin.jxtouchscreen.widget.PercentLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="6%"
+        app:layout_marginRightPercent="20%"
+        app:layout_marginTopPercent="16%"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginStart="@dimen/space_20"
+            android:text="@string/refrigeration"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20"
+            />
+
+        <ToggleButton
+            android:id="@+id/tb_switch_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_marginStart="@dimen/space_5"
+            android:background="@drawable/aircondition_selector_switch"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            app:layout_aspectRatio="@fraction/tb_switch_2_ratio"
+            app:layout_heightPercent="100%"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/Heating"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_marginStart="@dimen/space_5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20"/>
+    </com.jinxin.jxtouchscreen.widget.PercentLinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_air_circle_state"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        app:layout_aspectRatio="@fraction/same_ratio"
+        app:layout_heightPercent="39%"
+        app:layout_marginTopPercent="20%">
+
+        <ImageView
+            android:id="@+id/iv_air_condition_switch_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/default_img_desc"
+            android:background="@drawable/air_condition_circle_off"/>
+
+        <ImageView
+            android:id="@+id/iv_air_condition_wind_speed_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/default_img_desc"
+            android:layout_centerInParent="true"
+            android:background="@drawable/air_condition_wind_speed_none"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_air_circle_state"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="30%">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/air_condition_switch_3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20"/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_20"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/close"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"
+                app:layout_marginLeftPercent="7%"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/low"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"
+                app:layout_marginLeftPercent="27%"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mid"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"
+                app:layout_marginLeftPercent="47%"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/high"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"
+                app:layout_marginLeftPercent="67%"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="20%"
+                app:layout_widthPercent="80%">
+
+                <SeekBar
+                    android:id="@+id/sb_air_switch_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    style="@style/DefaultSeekBar"
+                    />
+            </RelativeLayout>
+        </android.support.percent.PercentRelativeLayout>
+
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>

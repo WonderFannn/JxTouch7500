@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:background="@drawable/background1">
+
+    <ImageView
+        android:id="@id/back_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/iv_back"
+        android:contentDescription="@string/default_img_desc"
+        app:layout_aspectRatio="@fraction/same_ratio"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="8%"
+        />
+
+    <ImageView
+        android:id="@+id/iv_beone_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/beonemark"
+        android:contentDescription="@string/default_img_desc"
+        app:layout_aspectRatio="@fraction/same_ratio"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="80%"
+        app:layout_marginTopPercent="5%"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iv_beone_logo"
+        android:layout_toRightOf="@id/iv_beone_logo"
+        android:text="@string/current_account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_22"
+        app:layout_marginLeftPercent="1%"
+        app:layout_marginTopPercent="5%"/>
+
+    <TextView
+        android:id="@+id/tv_setting_account_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_beone_logo"
+        android:layout_toEndOf="@id/iv_beone_logo"
+        android:layout_toRightOf="@id/iv_beone_logo"
+        android:textColor="@color/silver"
+        android:textSize="@dimen/text_18"
+        app:layout_marginLeftPercent="1%"/>
+
+    <Button
+        android:id="@+id/btn_setting_account"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/setting_gateway_info"
+        app:layout_aspectRatio="@fraction/setting_btn_ratio"
+        app:layout_heightPercent="12%"
+        app:layout_marginLeftPercent="15%"
+        app:layout_marginTopPercent="30%"/>
+
+    <Button
+        android:id="@+id/btn_setting_sync"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/selector_setting_sync"
+        app:layout_aspectRatio="@fraction/setting_btn_ratio"
+        app:layout_heightPercent="12%"
+        app:layout_marginLeftPercent="40%"
+        app:layout_marginTopPercent="30%"/>
+
+    <Button
+        android:id="@+id/btn_setting_device"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/setting_devices"
+        app:layout_aspectRatio="@fraction/setting_btn_ratio"
+        app:layout_heightPercent="12%"
+        app:layout_marginLeftPercent="65%"
+        app:layout_marginTopPercent="30%"/>
+
+    <Button
+        android:id="@+id/btn_setting_system"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/setting_system"
+        app:layout_aspectRatio="@fraction/setting_btn_ratio"
+        app:layout_heightPercent="12%"
+        app:layout_marginLeftPercent="65%"
+        app:layout_marginTopPercent="60%"/>
+
+    <Button
+        android:id="@+id/btn_setting_msg_remind"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/setting_msg_remind"
+        app:layout_aspectRatio="@fraction/setting_btn_ratio"
+        app:layout_heightPercent="12%"
+        app:layout_marginLeftPercent="40%"
+        app:layout_marginTopPercent="60%"/>
+
+    <Button
+        android:id="@+id/btn_setting_version"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/setting_version"
+        app:layout_aspectRatio="@fraction/setting_btn_ratio"
+        app:layout_heightPercent="12%"
+        app:layout_marginLeftPercent="15%"
+        app:layout_marginTopPercent="60%"/>
+
+</android.support.percent.PercentRelativeLayout>

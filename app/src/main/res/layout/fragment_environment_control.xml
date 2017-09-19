@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:background="@drawable/background1">
+
+    <ImageView
+        android:id="@id/back_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/iv_back"
+        android:contentDescription="@string/default_img_desc"
+        app:layout_aspectRatio="@fraction/same_ratio"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="8%"
+        />
+
+    <android.support.percent.PercentRelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_device_inspection"
+        app:layout_heightPercent="60%"
+        app:layout_widthPercent="60%">
+
+        <ListView
+            android:id="@+id/lv_environment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_10"
+            android:divider="@color/royalblue"
+            android:dividerHeight="@dimen/space_1"
+            android:scrollbars="none"
+            app:layout_heightPercent="90%"
+            app:layout_widthPercent="90%">
+        </ListView>
+    </android.support.percent.PercentRelativeLayout>
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:background="@drawable/background1"
+    >
+
+    <ImageView
+        android:id="@id/back_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/iv_back"
+        android:contentDescription="@string/default_img_desc"
+        app:layout_aspectRatio="@fraction/same_ratio"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="8%"
+        />
+
+    <ImageButton
+        android:id="@+id/curtain_fragment_controle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/selector_curtain_control_cilck"
+        android:contentDescription="@string/default_img_desc"
+        app:layout_aspectRatio="@fraction/curtain_fragment_controle_ratio"
+        app:layout_heightPercent="11.4%"
+        app:layout_marginLeftPercent="34%"
+        app:layout_marginTopPercent="16%"
+        />
+
+    <ImageButton
+        android:id="@+id/curtain_fragment_onrkey_location"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toEndOf="@id/curtain_fragment_controle"
+        android:layout_toRightOf="@id/curtain_fragment_controle"
+        android:background="@drawable/selector_curtain_one_key_location"
+        android:contentDescription="@string/default_img_desc"
+        app:layout_aspectRatio="@fraction/curtain_fragment_controle_ratio"
+        app:layout_heightPercent="11.4%"
+        app:layout_marginLeftPercent="1%"
+        app:layout_marginTopPercent="16%"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_curtain_control_layout_radio_no_seek"
+        android:layout_width="@dimen/space_300"
+        android:layout_height="@dimen/space_300"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="70%"
+        app:layout_marginBottomPercent="3%"
+        app:layout_widthPercent="36%">
+
+        <RelativeLayout
+            android:id="@+id/rl_control_layout_no_seek"
+            android:layout_width="@dimen/space_290"
+            android:layout_height="@dimen/space_290"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/space_240"
+                android:layout_height="@dimen/space_240"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ico_curtain_seek_bar"
+                />
+
+            <com.jinxin.jxtouchscreen.widget.CircleSeekBar
+                android:id="@+id/csb_curtain_control_no_seek"
+                android:layout_width="@dimen/space_240"
+                android:layout_height="@dimen/space_240"
+                android:layout_centerInParent="true"
+                android:thumb="@drawable/curtain_seekbar_btn_apha_2"
+                app:progress_background="@color/transparent"
+                app:progress_enable="false"
+                app:progress_foreground="@color/curtain_standard"
+                app:progress_max="100"
+                app:progress_start_angle="90"
+                app:progress_width="@dimen/space_10"/>
+
+        </RelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="@dimen/space_300"
+            android:layout_height="@dimen/space_40"
+            android:layout_below="@id/rl_control_layout_no_seek"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_20"
+            app:layout_widthPercent="36%">
+
+            <Button
+                android:id="@+id/btn_curtain_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_curtain_control_off_cilck"
+                android:textColor="@color/color_ccc"
+                app:layout_widthPercent="30%"/>
+
+            <Button
+                android:id="@+id/btn_curtain_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/btn_curtain_off"
+                android:layout_toStartOf="@id/btn_curtain_off"
+                android:background="@drawable/selector_curtain_control_on_cilck"
+                android:textColor="@color/color_ccc"
+                app:layout_marginRightPercent="5%"
+                app:layout_widthPercent="30%"/>
+
+            <Button
+                android:id="@+id/btn_curtain_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/btn_curtain_off"
+                android:layout_toRightOf="@id/btn_curtain_off"
+                android:background="@drawable/selector_curtain_pouse"
+                android:textColor="@color/color_ccc"
+                app:layout_marginLeftPercent="5%"
+                app:layout_widthPercent="30%"/>
+        </android.support.percent.PercentRelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_curtain_control_layout_radio_seek"
+        android:layout_width="@dimen/space_300"
+        android:layout_height="@dimen/space_300"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="70%"
+        app:layout_marginBottomPercent="3%"
+        app:layout_widthPercent="36%">
+
+        <RelativeLayout
+            android:id="@+id/rl_control_layout_seek"
+            android:layout_width="@dimen/space_290"
+            android:layout_height="@dimen/space_290"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/space_240"
+                android:layout_height="@dimen/space_240"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ico_curtain_seek_bar"
+                />
+
+            <com.jinxin.jxtouchscreen.widget.CircleSeekBar
+                android:id="@+id/csb_curtain_control_seek"
+                android:layout_width="@dimen/space_260"
+                android:layout_height="@dimen/space_260"
+                android:layout_centerInParent="true"
+                android:thumb="@drawable/curtain_seekbar_btn_2"
+                app:progress_background="@color/transparent"
+                app:progress_enable="true"
+                app:progress_foreground="@color/curtain_standard"
+                app:progress_max="100"
+                app:progress_start_angle="90"
+                app:progress_width="@dimen/space_10"/>
+
+            <TextView
+                android:id="@+id/tv_curtain_seek_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/space_60"
+                android:textColor="@color/radio_list_dialog_btn_text"
+                />
+
+        </RelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="@dimen/space_300"
+            android:layout_height="@dimen/space_40"
+            android:layout_below="@id/rl_control_layout_seek"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_20"
+            app:layout_widthPercent="34%">
+
+            <Button
+                android:id="@+id/btn_curtain_step_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_curtain_one_key_location_1_3"
+                android:textColor="@color/color_ccc"
+                app:layout_widthPercent="22%"/>
+
+            <Button
+                android:id="@+id/btn_curtain_step_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/btn_curtain_step_1"
+                android:background="@drawable/selector_curtain_one_key_location_1_2"
+                android:textColor="@color/color_ccc"
+                app:layout_marginLeftPercent="4%"
+                app:layout_widthPercent="22%"/>
+
+            <Button
+                android:id="@+id/btn_curtain_step_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/btn_curtain_step_1"
+                android:background="@drawable/selector_curtain_one_key_location_2_3"
+                android:textColor="@color/color_ccc"
+                app:layout_marginLeftPercent="30%"
+                app:layout_widthPercent="22%"/>
+
+            <Button
+                android:id="@+id/btn_curtain_step_4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/btn_curtain_step_1"
+                android:background="@drawable/selector_curtain_one_key_location_3_4"
+                android:textColor="@color/color_ccc"
+                app:layout_marginLeftPercent="56%"
+                app:layout_widthPercent="22%"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

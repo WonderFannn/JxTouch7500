@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout android:id="@+id/rl_music_bg"
+                                               xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:background="@drawable/power_ampilier_bc"
+                                       >
+
+    <View
+        android:id="@+id/base_view"
+        android:layout_width="@dimen/space_80"
+        android:layout_height="@dimen/space_20"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:id="@+id/ll_dot_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_80"
+        android:orientation="horizontal"
+        app:layout_marginTopPercent="73%"
+        >
+
+        <ImageView
+            android:id="@+id/iv_dot_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10"
+            android:background="@drawable/dot_check"/>
+
+        <ImageView
+            android:id="@+id/iv_dot_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10"
+            android:background="@drawable/dot"/>
+
+        <ImageView
+            android:id="@+id/iv_dot_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10"
+            android:background="@drawable/dot"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_music_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/rl_music_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/music_bottom_bar_bg"
+        app:layout_heightPercent="20%">
+
+        <Button
+            android:id="@+id/btn_music_play"
+            android:layout_width="@dimen/space_80"
+            android:layout_height="@dimen/space_80"
+            android:layout_centerInParent="true"
+            android:background="@drawable/power_ampilier_play"/>
+
+        <Button
+            android:id="@+id/btn_music_pause"
+            android:layout_width="@dimen/space_80"
+            android:layout_height="@dimen/space_80"
+            android:layout_centerInParent="true"
+            android:background="@drawable/power_ampilier_pouse"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_music_prev"
+            android:layout_width="@dimen/space_60"
+            android:layout_height="@dimen/space_60"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_50"
+            android:layout_toLeftOf="@id/btn_music_play"
+            android:background="@drawable/power_ampilier_left"
+            app:layout_marginRightPercent="5%"/>
+
+        <Button
+            android:id="@+id/btn_music_next"
+            android:layout_width="@dimen/space_60"
+            android:layout_height="@dimen/space_60"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_50"
+            android:layout_toRightOf="@id/btn_music_play"
+            android:background="@drawable/power_ampilier_right"
+            app:layout_marginLeftPercent="5%"/>
+
+        <Button
+            android:id="@+id/btn_music_mode_single"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_180"
+            android:layout_toRightOf="@id/btn_music_play"
+            android:background="@drawable/power_ampilier_single_cycle"
+            app:layout_marginLeftPercent="20%"/>
+
+        <Button
+            android:id="@+id/btn_music_mode_cycle"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_180"
+            android:layout_toRightOf="@id/btn_music_play"
+            android:background="@drawable/power_ampilier_circulation_lists"
+            app:layout_marginLeftPercent="20%"/>
+
+        <Button
+            android:id="@+id/btn_music_volume"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_240"
+            android:layout_toLeftOf="@id/btn_music_play"
+            android:layout_toStartOf="@id/btn_music_play"
+            android:background="@drawable/power_ampilier_volume"
+            app:layout_marginRightPercent="27%"/>
+
+
+        <Button
+            android:id="@+id/btn_music_output"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_180"
+            android:layout_toRightOf="@id/btn_music_play"
+            android:background="@drawable/selector_btn_music_small"
+            android:text="@string/music_output"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_8"
+            android:visibility="gone"
+            app:layout_marginLeftPercent="20%"/>
+
+        <Button
+            android:id="@+id/btn_music_input"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_240"
+            android:layout_toRightOf="@id/btn_music_play"
+            android:background="@drawable/selector_btn_music_small"
+            android:text="@string/music_input"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_8"
+            android:visibility="gone"
+            app:layout_marginLeftPercent="27%"/>
+
+
+        <Button
+            android:id="@+id/btn_music_status"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_300"
+            android:layout_toRightOf="@id/btn_music_play"
+            android:background="@drawable/selector_btn_music_small"
+            android:text="@string/music_status"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_8"
+            android:visibility="gone"
+            app:layout_marginLeftPercent="34%"/>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_music_volume_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_80"
+        android:layout_marginRight="@dimen/space_240"
+        android:layout_toLeftOf="@id/base_view"
+        android:layout_toStartOf="@id/base_view"
+        android:background="@drawable/voice_background"
+        android:visibility="gone"
+        app:layout_aspectRatio="@fraction/volume_seekbar_ratio"
+        app:layout_heightPercent="28.5%"
+        app:layout_marginRightPercent="27%">
+
+        <com.jinxin.jxtouchscreen.widget.VerticalSeekBar
+            android:id="@+id/vs_volume_seekbar"
+            style="@style/VerticalVolumeBar"
+            android:layout_width="wrap_content"
+            android:layout_height="185dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@id/back_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/iv_back"
+        android:contentDescription="@string/default_img_desc"
+        app:layout_aspectRatio="@fraction/same_ratio"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="8%"
+        />
+</android.support.percent.PercentRelativeLayout>

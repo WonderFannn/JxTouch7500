@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               android:layout_width="250dp"
+                                               android:layout_height="250dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/fancy_coverflow_adapter_item_rl"
+            android:layout_width="253dp"
+            android:layout_height="239dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/default_img_desc"
+            android:scaleType="fitXY"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fancy_coverflow_adapter_item_tv"
+        android:layout_width="@dimen/space_200"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/space_150"
+        android:textColor="#E7E7E7"
+        android:textSize="@dimen/text_25"/>
+
+</android.support.percent.PercentRelativeLayout>

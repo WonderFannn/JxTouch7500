@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    >
+
+    <ImageView
+        android:id="@id/back_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/iv_back"
+        android:contentDescription="@string/default_img_desc"
+        app:layout_aspectRatio="@fraction/same_ratio"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="8%"
+        />
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/voice_show_color"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="5%"/>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/infraed_transpond_bc"
+        android:gravity="center_horizontal"
+        app:layout_heightPercent="72%"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="58%">
+
+        <TextView
+            android:id="@+id/fundetail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_20"
+            app:layout_marginTopPercent="6%"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/fundetail_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fundetail_name"
+            android:background="@drawable/infrared_transpond_line"
+            app:layout_marginTopPercent="4%"/>
+
+        <ListView
+            android:id="@+id/fundetail_lv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fundetail_line"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/space_14"
+            app:layout_marginBottomPercent="10%"
+            app:layout_marginLeftPercent="6%"
+            app:layout_marginRightPercent="6%"
+            app:layout_marginTopPercent="3%"/>
+
+    </android.support.percent.PercentRelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_marginBottomPercent="2%"
+        app:layout_widthPercent="58%">
+
+        <ImageView
+            android:id="@+id/iv_nav_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription=""
+            android:paddingBottom="1dip"
+            android:src="@drawable/iv_navagation_scroll_left_select" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_nav_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription=""
+            android:paddingBottom="1dip"
+            android:src="@drawable/iv_navagation_scroll_right_select"
+            android:visibility="visible" >
+        </ImageView>
+
+        <com.jinxin.jxtouchscreen.widget.SyncHorizontalScrollView
+            android:id="@+id/mHsv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/iv_nav_right"
+            android:layout_toRightOf="@id/iv_nav_left"
+            android:background="@color/transparent"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/rl_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </com.jinxin.jxtouchscreen.widget.SyncHorizontalScrollView>
+
+    </RelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1">
+
+    <ImageView
+        android:id="@+id/iv_backbtn_inspection"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/iv_back"
+        android:contentDescription="@string/default_img_desc"
+        app:layout_aspectRatio="@fraction/same_ratio"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="8%" />
+
+    <android.support.percent.PercentRelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_device_inspection"
+        app:layout_heightPercent="80%"
+        app:layout_widthPercent="60%">
+
+        <RelativeLayout
+            android:id="@+id/rl_device_inspection_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space_20"
+            android:paddingTop="@dimen/space_20"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/device_routing_inspection"
+                android:textColor="@color/color_ccc"
+                android:textSize="@dimen/text_18" />
+
+            <Button
+                android:id="@+id/btn_instant_inspect"
+                android:layout_width="@dimen/space_100"
+                android:layout_height="@dimen/space_40"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/one_key_inspection"
+                android:paddingRight="@dimen/space_10"
+                android:textColor="@color/color_ccc"
+                android:textSize="@dimen/text_17" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_device_inpection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_device_inspection_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_10"
+            android:divider="@color/color_line"
+            android:dividerHeight="@dimen/space_1"
+            android:scrollbars="none"
+            app:layout_heightPercent="80%"
+            app:layout_widthPercent="90%">
+
+        </ListView>
+    </android.support.percent.PercentRelativeLayout>
+</android.support.percent.PercentRelativeLayout>

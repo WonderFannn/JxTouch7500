@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_10">
+
+    <ImageView
+        android:id="@+id/img_switch"
+        android:layout_width="@dimen/space_60"
+        android:layout_height="@dimen/space_60"
+        android:background="@drawable/selector_socket_on_multi"
+        android:contentDescription="@string/five_switch"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/space_10"
+        android:layout_toEndOf="@id/img_switch"
+        android:layout_toRightOf="@id/img_switch"
+        android:textColor="@color/color_ccc"
+        android:textSize="@dimen/text_22"/>
+
+    <ImageButton
+        android:id="@+id/ib_item_switch_toggle"
+        android:layout_width="@dimen/space_100"
+        android:layout_height="@dimen/space_60"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/six_switch_on"
+        android:contentDescription="@string/default_img_desc"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+</RelativeLayout>

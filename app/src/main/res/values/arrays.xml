@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="mode_menu">
+        <item>编号控制</item>
+        <item>置顶</item>
+        <item>修改</item>
+        <item>查看</item>
+        <item>删除</item>
+        <item>取消</item>
+    </string-array>  
+    
+    <string-array name="timer_menu">
+        <item>删除</item>
+        <item>取消</item>
+    </string-array>
+    
+    <string-array name="speaker_items">
+        <item>扬声器一</item>
+        <item>扬声器二</item>
+        <item>扬声器三</item>
+        <item>扬声器四</item>
+        <item>扬声器五</item>
+        <item>扬声器六</item>
+        <item>扬声器七</item>
+        <item>扬声器八</item>
+    </string-array>
+    
+    <string-array name="input_items">
+        <item>USB</item>
+        <item>SD</item>
+        <item>AUX</item>
+        <item>INPUT1</item>
+        <item>INPUT2</item>
+        <item>INPUT3</item>
+        <item>INPUT4</item>
+    </string-array>
+    
+    <string-array name="spinner_items">
+        <item>你父亲的生日？</item>
+        <item>你母亲的生日？</item>
+        <item>你的生日？</item>
+        <item>你的小学名称？</item>
+        <item>你的职业？</item>
+    </string-array>
+    
+    <string-array name="repeat_items">
+        <item>每天</item>
+        <item>周一至周五</item>
+        <item>仅今天</item>
+        <item>自定义</item>
+    </string-array>
+    
+    <string-array name="repeat_days_items">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    
+    <string-array name="tab_home_names">
+        <item>首页</item>
+        <item>场景</item>
+        <item>设备</item>
+        <item>定时</item>
+        <item>我的</item>
+    </string-array>
+    
+     <string-array name="music_names">
+        <item>播放</item>
+        <item>停止</item>
+        <item>上一首</item>
+        <item>下一首</item>
+        <item>音量+</item>
+        <item>音量-</item>
+        <item>静音</item>
+        <item>取消静音</item>
+    </string-array>
+    
+    <string-array name="pattern_detect_peroid">
+        <item>15 秒</item>
+        <item>20 秒</item>
+        <item>30 秒</item>
+        <item>1 分钟</item>
+        <item>2 分钟</item>
+    </string-array>
+
+    <string-array name="double_switches">
+        <item>键一</item>
+        <item>键二</item>
+        <item>键A</item>
+        <item>键B</item>
+        <item>键C</item>
+        <item>键D</item>
+    </string-array>
+
+    <string-array name="three_switches">
+        <item>键一</item>
+        <item>键二</item>
+        <item>键三</item>
+        <item>键A</item>
+        <item>键B</item>
+        <item>键C</item>
+    </string-array>
+
+    <string-array name="multi_switches">
+        <item>键一</item>
+        <item>键二</item>
+        <item>键A</item>
+        <item>键B</item>
+        <item>键C</item>
+        <item>键D</item>
+    </string-array>
+</resources>

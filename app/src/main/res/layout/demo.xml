@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_music_volume_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_200"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_80"
+        android:layout_marginRight="@dimen/space_240"
+        android:layout_toLeftOf="@id/base_view"
+        android:layout_toStartOf="@id/base_view"
+        android:background="@drawable/voice_background"
+        android:visibility="visible"
+  >
+
+        <com.jinxin.jxtouchscreen.widget.VerticalSeekBar
+            android:id="@+id/vs_volume_seekbar"
+            style="@style/VerticalVolumeBar"
+            android:layout_width="wrap_content"
+            android:layout_height="185dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/sb_air_switch_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:max="100"
+        android:maxHeight="20dp"
+        android:minHeight="60dp"
+        android:progressDrawable="@drawable/illumination_seekbar_bc"
+        android:thumb="@drawable/illumination_progress_bar_bt"
+        android:thumbOffset="20dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:contentDescription="@string/default_img_desc"
+        android:background="@drawable/voice_btn"
+        android:layout_height="wrap_content"/>
+
+
+    <SeekBar
+        android:id="@+id/illumination_transparent_seckbar"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:max="100"
+        android:maxHeight="@dimen/space_20"
+        android:paddingBottom="-20dp"
+        android:paddingTop="-20dp"
+        android:progress="80"
+        android:progressDrawable="@drawable/seekbar_define_style"
+        android:thumb="@drawable/seekbar_thumb"
+        android:thumbOffset="@dimen/space_20"
+        />
+</LinearLayout>

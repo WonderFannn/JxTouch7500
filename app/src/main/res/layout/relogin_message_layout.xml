@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal" >
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="220dp"
+        android:background="@color/white"
+        android:minHeight="160dp"
+        android:minWidth="220dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/message_top" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@drawable/warning_pic" />
+
+            <TextView
+                android:id="@+id/textview_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/messagebox_warning"
+                android:textColor="@color/deepskyblue"
+                android:textColorLink="@color/deepskyblue"
+                android:textSize="@dimen/text_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_under"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" >
+                    <TextView
+                        android:id="@+id/textview_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="22dp"
+                        android:paddingRight="22dp"
+                        android:text="已切换唤醒方式，重启后生效。"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_medium" />
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_cancel"
+                    android:ems="6"
+                    android:text="@string/messagebox_no"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/button_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/btn_confirm"
+                    android:ems="6"
+                    android:text="@string/messagebox_yes"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="@dimen/space_2"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_gateway_log_time"
+        android:layout_width="wrap_content"
+        android:textColor="@color/darkgrey"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_17"/>
+
+    <TextView
+        android:id="@+id/tv_gateway_log_msg"
+        android:layout_width="wrap_content"
+        android:textColor="@color/mediumspringgreen"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_4"
+        android:textSize="@dimen/text_17"/>
+</LinearLayout>

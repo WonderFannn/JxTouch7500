@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:background="@drawable/background1"
+                                               android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@id/back_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/iv_back"
+        android:contentDescription="@string/default_img_desc"
+        app:layout_aspectRatio="@fraction/same_ratio"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="8%"
+        />
+
+
+    <android.support.percent.PercentRelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="wrap_content"
+                                                   android:layout_height="wrap_content"
+                                                   android:layout_centerInParent="true"
+                                                   android:background="@drawable/bg_device_inspection"
+                                                   app:layout_heightPercent="80%"
+                                                   app:layout_widthPercent="60%">
+
+        <RelativeLayout
+            android:id="@+id/rl_message_list_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/space_20"
+            android:paddingTop="@dimen/space_20">
+
+            <TextView
+                android:id="@+id/tv_message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/device_wireless_gateway"
+                android:textColor="@color/color_ccc"
+                android:textSize="@dimen/text_20"/>
+        </RelativeLayout>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        app:layout_heightPercent="40%"
+        app:layout_marginLeftPercent="30%"
+        app:layout_marginTopPercent="35%"
+        app:layout_widthPercent="20%">
+
+        <ImageView
+            android:id="@+id/iv_networking"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/networking"
+            android:contentDescription="@string/default_img_desc"
+            app:layout_aspectRatio="@fraction/same_ratio"
+            app:layout_heightPercent="50%"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_networking"
+            android:layout_centerHorizontal="true"
+            android:text="@string/action_build_net"
+            android:textSize="@dimen/text_20"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        app:layout_heightPercent="40%"
+        app:layout_marginRightPercent="30%"
+        app:layout_marginTopPercent="35%"
+        app:layout_widthPercent="20%">
+
+        <ImageView
+            android:id="@+id/iv_query"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/default_img_desc"
+            android:src="@drawable/query"
+            app:layout_aspectRatio="@fraction/same_ratio"
+            app:layout_heightPercent="50%"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_query"
+            android:layout_centerHorizontal="true"
+            android:text="@string/action_getstate_door"
+            android:textSize="@dimen/text_20"/>
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="70%">
+
+        <ImageView
+            android:id="@+id/iv_action_build_net_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/default_img_desc"/>
+
+        <TextView
+            android:id="@+id/tv_action_build_net_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_action_build_net_success"
+            android:layout_toRightOf="@id/iv_action_build_net_success"
+            android:textSize="@dimen/text_18"
+            app:layout_marginLeftPercent="2%"/>
+    </android.support.percent.PercentRelativeLayout>
+</android.support.percent.PercentRelativeLayout>

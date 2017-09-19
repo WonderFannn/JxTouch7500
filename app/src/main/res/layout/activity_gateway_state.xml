@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:fitsSystemWindows="true"
+    >
+
+    <ImageView
+        android:id="@id/back_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/iv_back"
+        android:contentDescription="@string/default_img_desc"
+        app:layout_aspectRatio="@fraction/same_ratio"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="8%"
+        />
+
+    <fragment
+        android:id="@+id/fragment_gateway_info"
+        class="com.jinxin.jxtouchscreen.fragment.server.GatewayInfoFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="72%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="18%"
+        app:layout_widthPercent="35%"
+        tools:layout="@layout/fragment_gateway_info"/>
+
+    <View
+        app:layout_marginLeftPercent="42%"
+        android:background="@color/grey"
+        android:layout_width="@dimen/space_2"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="72%"
+        app:layout_marginTopPercent="18%"/>
+
+    <fragment
+        android:id="@+id/fragment_gateway_state"
+        class="com.jinxin.jxtouchscreen.fragment.server.GatewayStateFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:layout_heightPercent="72%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginTopPercent="18%"
+        app:layout_widthPercent="50%"
+        tools:layout="@layout/fragment_gateway_state"/>
+</android.support.percent.PercentRelativeLayout>

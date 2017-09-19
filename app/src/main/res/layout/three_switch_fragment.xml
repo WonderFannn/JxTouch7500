@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               android:orientation="vertical"
+                                               android:layout_width="match_parent"
+                                               android:background="@drawable/background1"
+                                               android:layout_height="match_parent">
+    <ImageView
+        android:id="@id/back_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/iv_back"
+        android:contentDescription="@string/default_img_desc"
+        app:layout_aspectRatio="@fraction/same_ratio"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="8%"
+        />
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        app:layout_heightPercent="72%"
+        android:background="@drawable/infraed_transpond_bc"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="58%">
+
+        <TextView
+            android:id="@+id/three_switch_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:layout_marginTopPercent="6%"
+            android:textSize="@dimen/text_20"/>
+
+        <ImageView
+            android:id="@+id/infrared_traspond_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/three_switch_title_tv"
+            android:background="@drawable/infrared_transpond_line"
+            app:layout_marginTopPercent="4%" />
+
+        <GridView
+            android:id="@+id/three_switch_gv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/infrared_traspond_line"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/space_14"
+            app:layout_marginBottomPercent="10%"
+            app:layout_marginLeftPercent="6%"
+            app:layout_marginRightPercent="6%"
+            app:layout_marginTopPercent="3%" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="curtain_fragment_controle_ratio" type="fraction">261%</item>
+    <item name="back_btn_ratio_ratio" type="fraction">78%</item>
+    <item name="login_window_ratio" type="fraction">105%</item>
+    <item name="same_ratio" type="fraction">100%</item>
+    <item name="double_switch_selector_ratio" type="fraction">32%</item>
+    <item name="btn_zg_lock_open_ratio" type="fraction">180%</item>
+    <item name="tb_switch_1_ratio" type="fraction">184%</item>
+    <item name="tb_switch_2_ratio" type="fraction">167%</item>
+    <item name="illumination_lamp_ratio" type="fraction">261%</item>
+    <item name="volume_seekbar_ratio" type="fraction">24.6%</item>
+    <item name="music_hand_ratio" type="fraction">471%</item>
+    <item name="color_light_seek_bar_ratio" type="fraction">1037%</item>
+    <item name="setting_btn_ratio" type="fraction">275%</item>
+    <item name="main_button_ratio" type="fraction">269%</item>
+</resources>

@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">智慧家居触摸屏版</string>
+
+    <string name="default_img_desc">图片信息</string>
+
+    <string name="operate_success">操作成功</string>
+    <string name="operate_failed">操作失败</string>
+    <string name="gateway_offline">网关离线</string>
+    <string name="time_out">处理超时</string>
+    <string name="operate_invalid_work">当前不可操作，请稍后再试</string>
+    <string name="back">返回</string>
+
+    <!-- 前置页面  -->
+    <string name="login_success">登录成功</string>
+    <string name="login_failed">登录失败</string>
+    <string name="load_failed">载入异常</string>
+    <string name="data_failed">数据异常</string>
+    <string name="main_data1">客厅场景</string>
+    <string name="open">开</string>
+    <string name="close">关</string>
+
+    <!-- 无线智能锁 -->
+    <string name="auto_lock_title">智能锁</string>
+    <string name="zg_lock_title">无线智能锁</string>
+    <string name="zg_lock_open">开</string>
+    <string name="zg_lock_close">关</string>
+    <string name="zg_lock_query_state">查询</string>
+    <string name="zg_lock_current_state_on">当前状态：开启</string>
+    <string name="zg_lock_current_state_off">当前状态：关闭</string>
+    <string name="zg_lock_low_battery">低电量</string>
+
+    <!-- 双路智能开关 -->
+    <string name="double_switch_title">双路智能开关</string>
+    <string name="switch_left">左开关</string>
+    <string name="switch_right">右开关</string>
+    <string name="on_or_off">禁用/启用</string>
+
+    <!-- 无线空调 -->
+    <string name="air_condition">无线空调</string>
+    <string name="air_condition_switch_1">全关/全开</string>
+    <string name="air_condition_switch_2">制冷制热开关控制</string>
+    <string name="air_condition_switch_3">风速控制</string>
+    <string name="current_state">当前状态</string>
+
+    <!-- 窗帘 -->
+    <string name="curtain_control">窗帘控制</string>
+    <string name="wireless_curtain_control">无线窗帘控制</string>
+    <string name="curtain_location">一键定位</string>
+    <string name="curtain_on">开</string>
+    <string name="curtain_off">关</string>
+    <string name="curtain_stop">停</string>
+    <string name="curtain_step_1">1/3</string>
+    <string name="curtain_step_2">1/2</string>
+    <string name="curtain_step_3">2/3</string>
+    <string name="curtain_step_4">3/4</string>
+
+    <!-- Pluto音箱 -->
+    <string name="pluto_box">Pluto音箱</string>
+    <string name="control_on">开机</string>
+    <string name="control_off">关机</string>
+    <string name="music_volume">音量</string>
+    <string name="music_mute">静音</string>
+    <string name="music_unmute">取消静音</string>
+    <string name="music_sound_add">音量 +</string>
+    <string name="music_sound_sub">音量 -</string>
+    <string name="pluto_on">已开启</string>
+    <string name="pluto_off">已关闭</string>
+    <string name="pluto_status">状态</string>
+    <string name="query_failed">查询失败</string>
+    <string name="mute_invalid">当前处于静音状态，音量不可调控</string>
+
+    <!-- 功放 -->
+    <string name="music_amp">功放</string>
+    <string name="music_title">背景音乐</string>
+    <string name="music_disk">CD</string>
+    <string name="music_output">扬声器</string>
+    <string name="music_status">状态</string>
+    <string name="music_input">输入源</string>
+    <string name="music_status_playing">正在播放</string>
+    <string name="music_status_no_play">未播放</string>
+    <string name="music_volume_query_failed">音量查询失败</string>
+    <string name="music_volume_set_failed">音量设置失败</string>
+    <string name="music_invalid_input">未检测到USB、SD卡连接并选中为当前输入源</string>
+    <string name="music_loading_from_cloud">正在从云端加载歌曲列表</string>
+    <string name="music_loading_failed">加载失败</string>
+    <string name="music_loading_success">加载成功</string>
+    <string name="music_unkown_song">未知歌曲</string>
+    <string name="music_play_all_mode">顺序播放</string>
+    <string name="music_play_single_mode">单曲播放</string>
+    <string name="music_set_input">设置输入源为</string>
+    <string name="music_set_input_failed">设置输入源失败</string>
+    <string name="music_check_link_failed">查询连接状态失败</string>
+    <string name="music_query_song_failed">查询歌曲状态失败</string>
+
+
+    <string name="safe_and_warnning">安防报警</string>
+
+    <string name="detail_hint">请长按进入详细操作界面</string>
+    <string name="login_null_hint">请输入用户名或密码</string>
+    <string name="relogin_hint">请登录之后进行操作</string>
+    <string name="pwd_hint">可不填</string>
+    <string name="pwd">密码</string>
+    <string name="account">账号</string>
+    <string name="account_hint">可不填</string>
+    <string name="login_hint">登录中，请稍候</string>
+    <string name="subaccount_invalid">子账户不可操作</string>
+    <string name="funtion_yet_finish">此功能暂未开放</string>
+    <string name="low">低</string>
+    <string name="mid">中</string>
+    <string name="high">高</string>
+    <string name="cancel">取消</string>
+    <string name="reset">重置</string>
+    <string name="ok">确定</string>
+    <string name="empty">无</string>
+    <string name="unnamed">未命名</string>
+    <string name="need_delete">是否删除?</string>
+
+    <!-- 五路开关 -->
+    <string name="five_switch">五路开关</string>
+
+    <!-- 首页环境监测 -->
+    <string name="air_quality_level_1">优</string>
+    <string name="air_quality_level_2">良好</string>
+    <string name="air_quality_level_3">轻度污染</string>
+    <string name="air_quality_level_4">中度污染</string>
+    <string name="air_quality_level_5">重度污染</string>
+
+    <!-- 设备调试 -->
+    <string name="device_debug_title">设备调试</string>
+    <string name="device_routing_inspection">设备巡检</string>
+    <string name="device_instant_inspection">一键巡检</string>
+    <string name="device_state_normal">设备正常</string>
+    <string name="device_state_abnormal">设备异常</string>
+    <string name="check_cycle">巡检</string>
+
+    <!--系统设置-->
+    <string name="system_setting">系统设置</string>
+    <string name="open_custom_wakeup_setting">切换自定义唤醒</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="setting_heartrate">设置心跳频率</string>
+    <string name="setting">设置</string>
+
+    <!-- 安防报警 -->
+    <string name="security_indoor">居家</string>
+    <string name="security_outdoor">户外</string>
+    <string name="smoke_sense">烟雾传感器</string>
+    <string name="gas_sense">可燃气体传感器</string>
+    <string name="infrared">红外遥感</string>
+    <string name="door_magnet">门磁</string>
+
+    <string name="message_alert">消息提醒</string>
+    <string name="message_alert_delete">删除</string>
+
+    <string name="light_color_switch_success">颜色切换成功</string>
+    <string name="device_debug_gateway">网关</string>
+    <string name="device_wireless_gateway">无线网关</string>
+    <string name="networking">组网</string>
+    <string name="device_valid">设备正常</string>
+    <string name="action_getstate_door">查询</string>
+    <string name="action_build_net">组网</string>
+    <string name="action_build_net_success">组网成功</string>
+
+    <!-- 空调 -->
+    <string name="refrigeration">制冷</string>
+    <string name="Heating">制热</string>
+
+    <!-- 彩灯 -->
+    <string name="color_light_1">亮度-</string>
+    <string name="color_light_2">亮度+</string>
+    <string name="color_light_3">透明度-</string>
+    <string name="color_light_4">透明度+</string>
+    <string name="color_light_5">模式</string>
+    <string name="color_light_6">延时</string>
+    <string name="color_light_7">减弱- 0</string>
+    <string name="color_light_8">100 加强+</string>
+    <string name="color_light_9">当前颜色</string>
+    <string name="color_light_10">颜色变换</string>
+
+    <string name="version_desc">\u0020\u0020\u0020\u0020\u0020\u0020“人在外，身边就是家”，BEONE智慧家居是金鑫智慧在信息化时代推出的完美居住生活解决方案，它通过互联网、广电网、电力网等多网融合的网络平台，把所有设备通过传感器与之互联，将改变人们的传统生活方式。</string>
+    <string name="version_code_desc">扫描二微码关注智慧家居</string>
+    <string name="version_copyright_desc">金鑫智慧  版权所有\nCopyright(C) 2011-2014 BEONE.All Right  Reserved</string>
+    <string name="check_update">检测更新</string>
+    <!-- 设置 -->
+    <string name="current_account">当前用户</string>
+    <string name="mode_contorl_success">操作成功</string>
+
+    <!-- 登录流程 -->
+    <string name="login_connecting">连接大网关中&#8230;</string>
+    <string name="login_updating">更新数据&#8230;</string>
+    <string name="login_update_data_success">数据更新成功</string>
+
+    <!-- 大网关状态信息及日志 -->
+    <string name="gateway_main">主网关</string>
+    <string name="gateway_sub">子网关</string>
+    <string name="gateway_log">大网关日志</string>
+    <string name="gateway_ip">网络地址：</string>
+    <string name="gateway_mac">物理地址：</string>
+    <string name="gateway_sn">序&#160;&#160;列&#160;&#160;号：</string>
+    <string name="gateway_account">当前账号：</string>
+
+    <!-- 请替换成在语音云官网申请的appid -->
+    <string name="app_id">546b0767</string>
+
+    <string name="voice_hint">说点儿什么吧&#8230;</string>
+    <string name="text_begin">请开始说话&#8230;</string>
+    <string name="listen_fail">听写失败,错误码：</string>
+    <string name="voice_control_type1">设备小助手</string>
+    <string name="voice_control_type1_1">切换设备</string>
+    <string name="voice_control_type2">遥控小助手</string>
+    <string name="voice_control_type2_1">切换遥控</string>
+    <string name="voice_control_type3">音乐小助手</string>
+    <string name="voice_control_type3_1">切换音乐</string>
+    <string name="init_fail">初始化失败,错误码</string>
+
+    <string name="voice_control_change_tips1">已切换到模式控制</string>
+    <string name="voice_control_change_tips2">已切换到遥控控制模式</string>
+    <string name="voice_control_change_tips3">已切换到音乐播放模式</string>
+    <string name="btn_exit">退出</string>
+    <string name="voice_to_sleep">休眠</string>
+    <string name="please_speak">请说话</string>
+    <string name="wait_reading">正在识别，请稍后...</string>
+    <string name="speak_volume">当前正在说话，音量大小：</string>
+
+    <string name="waiting_wake_up">已休眠，等待唤醒...</string>
+    <string name="need_help">您好，请问需要什么帮助</string>
+    <string name="click_voice">点击语音录入...</string>
+    <string name="talking_voice">正在语音录入...</string>
+    <string name="uploading_voice">正在上传至大网关...</string>
+    <string name="voice_refresh">重新录入...</string>
+    <string name="recognition_fail">呃，我好像不明白你讲的是什么？</string>
+    <string name="please_waiting">自定义唤醒正在关闭，请稍后...</string>
+
+    <string name="find_fail">未找到配置的语音模式 请重新录入</string>
+    <string name="find_success">已找到配置的语音模式，正在为您执行操作</string>
+    <string name="voice_null">我没有听清你在讲什么,请声音大一点</string>
+    <string name="exit_voice">正在退出声音识别界面</string>
+    <string name="messagebox_warning">是否立即重启</string>
+    <string name="messagebox_no">稍后重启</string>
+    <string name="messagebox_yes">立即重启</string>
+
+    <string name="equipment_assistant">设备小助手</string>
+    <string name="equipment">设备</string>
+    <string name="music_assistant">音乐小助手</string>
+    <string name="music">音乐</string>
+    <string name="change_mode">切换模式中</string>
+    <string name="model_null">当前场景下模式为空</string>
+    <string name="key1">键1:</string>
+    <string name="key2">键2:</string>
+    <string name="key3">键3:</string>
+    <string name="key4">键4:</string>
+    <string name="key5">键5:</string>
+    <string name="key6">键6:</string>
+    <string name="key7">键7:</string>
+    <string name="key8">键8:</string>
+    <string name="left">左:</string>
+    <string name="right">右:</string>
+    <string name="change_wake_style">切换唤醒方式成功</string>
+
+</resources>

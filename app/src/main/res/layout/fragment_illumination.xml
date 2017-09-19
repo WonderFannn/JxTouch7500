@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:background="@drawable/background1"
+    >
+
+    <ImageView
+        android:id="@id/back_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/iv_back"
+        android:contentDescription="@string/default_img_desc"
+        app:layout_aspectRatio="@fraction/same_ratio"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="8%"
+        />
+
+    <ImageButton
+        android:id="@+id/illumination_lamp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/selector_illumination_lamp"
+        android:contentDescription="@string/default_img_desc"
+        android:scaleType="fitXY"
+        app:layout_aspectRatio="@fraction/illumination_lamp_ratio"
+        app:layout_heightPercent="12%"
+        app:layout_marginLeftPercent="32%"
+        app:layout_marginTopPercent="14%"
+        />
+
+    <ImageButton
+        android:id="@+id/illumination_color_lamp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toEndOf="@id/illumination_lamp"
+        android:layout_toRightOf="@id/illumination_lamp"
+        android:background="@drawable/selector_illumination_color_lamp"
+        android:button="@null"
+        android:contentDescription="@string/default_img_desc"
+        android:scaleType="fitXY"
+        app:layout_aspectRatio="@fraction/illumination_lamp_ratio"
+        app:layout_heightPercent="12%"
+        app:layout_marginLeftPercent="2%"
+        app:layout_marginTopPercent="14%"/>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/illumination_color_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/illumination_color_changed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <com.jinxin.jxtouchscreen.widget.ColorPickerView
+                android:id="@+id/illumination_color_disk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:layout_aspectRatio="@fraction/same_ratio"
+                app:layout_heightPercent="42%"
+                app:layout_marginTopPercent="31%"
+                />
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/illumination_brightness_prl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/illumination_color_disk"
+                android:layout_centerHorizontal="true"
+                app:layout_marginTopPercent="4%"
+                app:layout_widthPercent="60%">
+
+                <SeekBar
+                    android:id="@+id/illumination_seecbar"
+                    style="@style/DefaultSeekBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:max="100"
+                    android:progress="20"
+                    app:layout_widthPercent="50%"
+                    />
+
+                <TextView
+                    android:id="@+id/illumination_tv_brightness_subtract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/illumination_seecbar"
+                    android:layout_toStartOf="@id/illumination_seecbar"
+                    android:text="@string/color_light_1"
+                    android:textSize="@dimen/text_20"/>
+
+                <TextView
+                    android:id="@+id/illumination_tv_brightness_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/illumination_seecbar"
+                    android:layout_toRightOf="@id/illumination_seecbar"
+                    android:text="@string/color_light_2"
+                    android:textSize="@dimen/text_20"/>
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/illumination_color_disk"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_60"
+                app:layout_widthPercent="60%"
+                >
+
+                <SeekBar
+                    android:id="@+id/illumination_transparent_seckbar"
+                    style="@style/DefaultSeekBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:max="100"
+                    android:progress="80"
+                    app:layout_widthPercent="50%"
+                    />
+
+                <TextView
+                    android:id="@+id/illumination_tv_transparent_subtract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/illumination_transparent_seckbar"
+                    android:layout_toStartOf="@id/illumination_transparent_seckbar"
+                    android:text="@string/color_light_3"
+                    android:textSize="@dimen/text_20"/>
+
+                <TextView
+                    android:id="@+id/illumination_tv_transparent_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/illumination_transparent_seckbar"
+                    android:layout_toRightOf="@id/illumination_transparent_seckbar"
+                    android:text="@string/color_light_4"
+                    android:textSize="@dimen/text_20"/>
+            </android.support.percent.PercentRelativeLayout>
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/illumination_color_unchanged"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/illumination_wheelview_pl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/illumination_color_changed_bc"
+                android:gravity="center_horizontal"
+                app:layout_heightPercent="42%"
+                app:layout_marginTopPercent="41%"
+                app:layout_widthPercent="42%">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/illumination_left_pl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_40"
+                    android:layout_marginRight="@dimen/space_40">
+
+                    <com.jinxin.jxtouchscreen.widget.wheelview.WheelView
+                        android:id="@+id/illumination_left_wheelview"
+                        android:layout_width="@dimen/space_150"
+                        android:layout_height="@dimen/space_100"
+                        app:layout_marginTopPercent="20%"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/illumination_left_wheelview"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/color_light_5"
+                        android:textSize="@dimen/text_24"
+                        app:layout_marginTopPercent="10%"/>
+                </android.support.percent.PercentRelativeLayout>
+
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/illumination_right_pl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/illumination_left_pl"
+                    android:layout_toRightOf="@id/illumination_left_pl">
+
+                    <com.jinxin.jxtouchscreen.widget.wheelview.WheelView
+                        android:id="@+id/illumination_right_wheelview"
+                        android:layout_width="@dimen/space_150"
+                        android:layout_height="@dimen/space_100"
+                        app:layout_marginTopPercent="20%"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/illumination_right_wheelview"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/color_light_6"
+                        android:textSize="@dimen/text_24"
+                        app:layout_marginTopPercent="10%"/>
+                </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/illumination_wheelview_pl"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                app:layout_marginTopPercent="4%"
+                app:layout_widthPercent="60%">
+
+                <com.jinxin.jxtouchscreen.widget.ManaMySeekBar
+                    android:id="@+id/illumination_seecbar_changed"
+                    style="@style/DefaultSeekBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:max="100"
+                    android:progress="20"
+                    app:layout_widthPercent="50%"
+                    />
+
+                <TextView
+                    android:id="@+id/illumination_tv_brightness_subtract_changed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/illumination_seecbar_changed"
+                    android:layout_toStartOf="@id/illumination_seecbar_changed"
+                    android:text="@string/color_light_7"
+                    android:textSize="@dimen/text_20"/>
+
+                <TextView
+                    android:id="@+id/illumination_tv_brightness_plus_changed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/illumination_seecbar_changed"
+                    android:layout_toRightOf="@id/illumination_seecbar_changed"
+                    android:text="@string/color_light_8"
+                    android:textSize="@dimen/text_20"/>
+
+            </android.support.percent.PercentRelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_marginLeftPercent="21%"
+            app:layout_marginTopPercent="31%">
+
+            <TextView
+                android:id="@+id/illumination_tv_current_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/color_light_9"
+                android:textSize="@dimen/text_20"/>
+
+            <ImageView
+                android:id="@+id/illumination_color_current_im"
+                android:layout_width="@dimen/space_60"
+                android:layout_height="@dimen/space_25"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginStart="@dimen/space_10"
+                android:background="@color/black"
+                android:contentDescription="@string/default_img_desc"/>
+
+        </LinearLayout>
+
+        <com.jinxin.jxtouchscreen.widget.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            app:layout_heightPercent="6%"
+            app:layout_marginRightPercent="21%"
+            app:layout_marginTopPercent="31%"
+            app:layout_widthPercent="20%">
+
+            <TextView
+                android:id="@+id/illumination_tv_color_changed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="@string/color_light_10"
+                android:textSize="@dimen/text_20"/>
+
+            <ImageButton
+                android:id="@+id/illumination_checkbox"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginStart="@dimen/space_10"
+                android:background="@drawable/selector_illumination_checkbox"
+                app:layout_aspectRatio="@fraction/tb_switch_2_ratio"
+                app:layout_heightPercent="100%"/>
+
+        </com.jinxin.jxtouchscreen.widget.PercentLinearLayout>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/illumination_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/illumination_color_disk_light"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/illumination_light_bc"
+            android:contentDescription="@string/default_img_desc"
+            app:layout_aspectRatio="@fraction/same_ratio"
+            app:layout_heightPercent="42%"
+            app:layout_marginTopPercent="31%"
+            />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/illumination_brightness_prl_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/illumination_color_disk_light"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            app:layout_marginTopPercent="4%"
+            app:layout_widthPercent="60%">
+
+            <com.jinxin.jxtouchscreen.widget.ManaMySeekBar
+                android:id="@+id/illumination_seecbar_light"
+                style="@style/DefaultSeekBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:max="100"
+                android:progress="20"
+                app:layout_widthPercent="50%"
+                />
+
+            <TextView
+                android:id="@+id/illumination_tv_brightness_subtract_lghit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/illumination_seecbar_light"
+                android:layout_toStartOf="@id/illumination_seecbar_light"
+                android:text="@string/color_light_7"
+                android:textSize="@dimen/text_20"/>
+
+            <TextView
+                android:id="@+id/illumination_tv_light_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/illumination_seecbar_light"
+                android:layout_toRightOf="@id/illumination_seecbar_light"
+                android:text="@string/color_light_8"
+                android:textSize="@dimen/text_20"/>
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

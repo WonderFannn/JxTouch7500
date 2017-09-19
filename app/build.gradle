@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        applicationId "com.jinxin.jxtouch"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 14
+        versionName "1.2.4"
+
+        ndk {
+            ldLibs "log", "z", "m"
+            abiFilters "arm64-v8a", "armeabi", "armeabi-v7a", "mips", "mips64", "x86", "x86_64"
+        }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'jinxinoacloud'
+            keyPassword 'jingxinzhihui2013oa'
+            storeFile file('../oajx.keystore')
+            storePassword 'jingxinzhihui2013oa'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+//            minifyEnabled true
+//            zipAlignEnabled true
+//            // 移除无用的resource文件
+//            shrinkResources true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+//            jniLibs.srcDirs = ['src/main/jni_test']
+        }
+    }
+
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:recyclerview-v7:23.0.1'
+    compile 'com.android.support:percent:23.3.0'
+    compile 'com.android.support:support-v4:23.0.1'
+    compile 'com.alibaba:fastjson:1.2.12'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.hotchemi:permissionsdispatcher:2.3.1'
+    compile files('libs/Msc.jar')
+    apt 'com.github.hotchemi:permissionsdispatcher-processor:2.3.1'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
+    compile project(':serialport')
+}

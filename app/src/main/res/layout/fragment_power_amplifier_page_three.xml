@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/space_10">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="15%"
+        app:layout_widthPercent="70%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/rl_detail_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="6%"
+            app:layout_marginTopPercent="3%">
+
+            <TextView
+                android:id="@+id/tv_item_detail_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/space_5"
+                android:layout_marginStart="@dimen/space_5"
+                android:gravity="start"
+                android:text="当前状态"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18" />
+
+            <ImageView
+                android:id="@+id/iv_item_check_detail_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ico_unfold"
+                android:contentDescription="@string/default_img_desc" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <View
+            android:id="@+id/v_divider_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_2"
+            android:layout_below="@id/rl_detail_top_bar"
+            android:layout_marginTop="@dimen/space_5"
+            android:background="@color/color_shape_normal" />
+
+        <LinearLayout
+            android:id="@+id/ll_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_divider_line"
+            android:layout_marginTop="@dimen/space_5"
+            android:orientation="vertical"
+            app:layout_widthPercent="90%"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    android:id="@+id/tv_music_play_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/ico_trumpet"
+                    android:text="@string/music_status_playing"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_music_playing_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_weight="1"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:drawableLeft="@drawable/ico_music"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/music_output"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/fl_music_status_output_working"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_weight="1">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/rl_detail_top_bar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_detail"
+            app:layout_heightPercent="6%"
+            app:layout_marginTopPercent="2%">
+
+            <TextView
+                android:id="@+id/tv_item_detail_list1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/space_5"
+                android:layout_marginStart="@dimen/space_5"
+                android:gravity="start"
+                android:text="输入源"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18" />
+
+            <ImageView
+                android:id="@+id/iv_item_check_detail_list1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ico_unfold"
+                android:contentDescription="@string/default_img_desc" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <View
+            android:id="@+id/v_divider_line1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_2"
+            android:layout_below="@+id/rl_detail_top_bar1"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@color/color_shape_normal" />
+
+        <GridView
+            android:id="@+id/gv_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_divider_line1"
+            android:layout_centerHorizontal="true"
+            android:numColumns="2"
+            app:layout_widthPercent="70%"
+            ></GridView>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/rl_detail_top_bar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gv_input"
+            app:layout_heightPercent="6%"
+            app:layout_marginTopPercent="2%">
+
+            <TextView
+                android:id="@+id/tv_item_detail_list2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/space_5"
+                android:layout_marginStart="@dimen/space_5"
+                android:gravity="start"
+                android:text="扬声器"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18" />
+
+            <ImageView
+                android:id="@+id/iv_item_check_detail_list2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ico_unfold"
+                android:contentDescription="@string/default_img_desc" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <View
+            android:id="@+id/v_divider_line2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_2"
+            android:layout_below="@+id/rl_detail_top_bar2"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@color/color_shape_normal" />
+
+        <GridView
+            android:id="@+id/gv_speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_divider_line2"
+            android:layout_centerHorizontal="true"
+            android:numColumns="2"
+            app:layout_widthPercent="70%"
+            ></GridView>
+    </android.support.percent.PercentRelativeLayout>
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,172 @@
+<resources>
+
+    <!-- 有标题栏全屏 -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@color/transparent_4</item>
+        <item name="colorPrimaryDark">@color/transparent_5</item>
+        <item name="colorAccent">@color/transparent_6</item>
+    </style>
+
+    <!-- 无标题栏全屏 -->
+    <style name="AppThemeNoTitle" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:listDivider">@drawable/divider</item>
+    </style>
+
+    <!--对话框无标题栏半透明 -->
+    <style name="ThemeDialogTransparent" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@color/transparent_1</item>
+    </style>
+
+    <!-- 标题栏半透明 -->
+    <style name="ThemeBaseActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:background">@color/transparent_3</item>
+        <item name="android:backgroundStacked">@color/transparent_4</item>
+        <item name="android:backgroundSplit">@color/transparent_4</item>
+    </style>
+
+    <!-- 欢迎界面加载 -->
+    <style name="splash_progress_style">
+        <item name="android:minWidth">@dimen/space_25</item>
+        <item name="android:minHeight">@dimen/space_25</item>
+        <item name="android:maxWidth">@dimen/space_60</item>
+        <item name="android:maxHeight">@dimen/space_60</item>
+    </style>
+
+
+    <!-- ****************************** 其他开源或自定义控件 ****************************** -->
+
+    <!-- 时钟样式 -->
+    <declare-styleable name="DigitalClockView">
+        <attr name="date_format" format="string|reference" />
+        <attr name="time_format" format="string|reference" />
+        <attr name="date_text_size" format="dimension|reference" />
+        <attr name="time_text_size" format="dimension|reference" />
+        <attr name="date_text_color" format="color|reference" />
+        <attr name="time_text_color" format="color|reference" />
+    </declare-styleable>
+
+    <style name="dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@color/white</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <!-- fancycoverflow样式属性 -->
+    <declare-styleable name="FancyCoverFlow">
+        <attr name="unselectedAlpha" format="float" />
+        <attr name="unselectedSaturation" format="float" />
+        <attr name="unselectedScale" format="float" />
+        <attr name="maxRotation" format="integer" />
+        <attr name="scaleDownGravity" format="float" />
+        <attr name="actionDistance" format="integer">
+            <enum name="auto" value="2147483647" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleSeekBar">
+        <attr name="android:thumb" />
+        <attr name="progress_enable" format="boolean" />
+        <attr name="progress_start_angle" format="integer" />
+        <attr name="progress_width" format="dimension|reference" />
+        <attr name="progress_background" format="color|reference" />
+        <attr name="progress_foreground" format="color|reference" />
+        <attr name="progress_max" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RangeBar">
+        <attr name="tickStart" format="float" />
+        <attr name="tickEnd" format="float" />
+        <attr name="tickInterval" format="float" />
+        <attr name="tickHeight" format="dimension" />
+        <attr name="tickColor" format="color" />
+        <attr name="barWeight" format="dimension" />
+        <attr name="barColor" format="reference|color" />
+        <attr name="textColor" format="reference|color" />
+        <attr name="pinColor" format="reference|color" />
+        <attr name="selectorSize" format="dimension" />
+        <attr name="pinPadding" format="dimension" />
+        <attr name="barPaddingBottom" format="dimension" />
+        <attr name="selectorColor" format="reference|color" />
+        <attr name="rangeBar" format="boolean" />
+        <attr name="connectingLineWeight" format="dimension" />
+        <attr name="connectingLineColor" format="reference|color" />
+        <attr name="pinRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="BubbleLayout">
+        <attr name="bl_arrowWidth" format="dimension|reference" />
+        <attr name="bl_cornersRadius" format="dimension|reference" />
+        <attr name="bl_arrowHeight" format="dimension|reference" />
+        <attr name="bl_arrowPosition" format="dimension|reference" />
+        <attr name="bl_bubbleColor" format="color|reference" />
+        <attr name="bl_strokeWidth" format="dimension|reference" />
+        <attr name="bl_strokeColor" format="color|reference" />
+
+        <attr name="bl_arrowDirection" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <style name="VerticalVolumeBar" parent="@android:style/Widget.Holo.SeekBar">
+        <item name="android:progressDrawable">@drawable/layer_voice_bar</item>
+        <item name="android:thumb">@drawable/voice_btn</item>
+    </style>
+
+    <style name="DefaultSeekBar" parent="@android:style/Widget.Holo.SeekBar">
+        <item name="android:progressDrawable">@drawable/layer_seek_bar</item>
+        <item name="android:thumb">@drawable/illumination_progress_bar_bt_2</item>
+        <item name="android:thumbOffset">@dimen/space_20</item>
+        <item name="android:maxHeight">@dimen/space_25</item>
+        <item name="android:minHeight">@dimen/space_20</item>
+    </style>
+
+    <style name="ShareDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item><!-- 去掉头部 -->
+    </style>
+    <!-- 自定义对话框 -->
+    <style name="CustomerDialogStyle">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="window_anim_style">
+        <item name="android:windowEnterAnimation">@anim/appear_center_in</item>
+        <item name="android:windowExitAnimation">@anim/disappear_center_out</item>
+    </style>
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppThemeNoTitle.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppThemeNoTitle.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
